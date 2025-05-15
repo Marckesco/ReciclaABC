@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recicla ABC</title>
+    <link rel="stylesheet" type="text/css" href="style.css?1" media="screen" />
+  </head>
+  <body>
+    <header>
+      <h1>Recicla ABC</h1>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </header>
+    <nav id="mainNav" class="mobile-nav">
+      <a href="#por-que-reciclar">Por que Reciclar</a>
+      <a href="#como-reciclar">Como Reciclar</a>
+      <a href="#onde-reciclar">Onde Reciclar</a>
+      <a href="#eletronicos">Descarte Eletronicos</a>
+      <a href="#" onclick="abrirModal()">Quiz</a>
+    </nav>
+
+    <main>
+      <section id="por-que-reciclar">
+        <div class="content">
+          <img src="img/reciclagem-caminhao.jpg" alt="Caminhão de reciclagem" />
+          <div>
+            <h2>Por que Reciclar?</h2>
+            <p>
+              A reciclagem economiza energia, diminui a poluição e reduz a
+              exploração de recursos naturais.
+            </p>
+            <p>
+              Além disso, ela ajuda a gerar empregos e renda para muitas
+              famílias envolvidas na cadeia da reciclagem.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="como-reciclar">
+        <div class="content">
+          <div>
+            <h2>Como Reciclar?</h2>
+            <ul>
+              <li><strong>🔴 Plásticos:</strong> garrafas, tampas, potes.</li>
+              <li><strong>🔵 Papel:</strong> jornais, revistas, caixas.</li>
+              <li>
+                <strong>🟢 Vidro:</strong> garrafas, potes (sem tampa metálica).
+              </li>
+              <li><strong>🟡 Metal:</strong> latas de alumínio e aço.</li>
+              <li>
+                <strong>⚫ Nunca:</strong> lixo orgânico, espelhos, cerâmica,
+                papel higiênico.
+              </li>
+            </ul>
+          </div>
+          <img src="img/separacao-lixo.jpg" alt="Lixos correspondendetes" />
+        </div>
+      </section>
+
+      <section id="onde-reciclar">
+        <div class="content">
+          <img src="img/mapa-locais.jpg" alt="Mapa com locais de reciclagem" />
+          <div>
+            <h2>Onde Reciclar?</h2>
+            <p>
+              Você pode encontrar pontos de coleta em sua cidade. Aqui estão
+              alguns exemplos:
+            </p>
+            <ul>
+              <li>
+                ✔️
+                <a
+                  href="https://portais.santoandre.sp.gov.br/semasa/residuos/estacoes-de-coleta/"
+                  target="_blank"
+                >
+                  Santo andré
+                </a>
+              </li>
+              <li>
+                ✔️
+                <a
+                  href="https://www.sbclimpeza.com.br/ecopontos/"
+                  target="_blank"
+                >
+                  São Bernardo do campo
+                </a>
+              </li>
+              <li>
+                ✔️
+                <a
+                  href="https://www.maua.sp.gov.br/Informacoes/Ecopontos.aspx"
+                  target="_blank"
+                >
+                  Mauá
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="eletronicos">
+        <div class="content">
+          <div>
+            <h2>Descarte de Eletrônicos</h2>
+            <p>
+              Aparelhos eletrônicos como celulares, baterias, computadores e
+              eletrodomésticos pequenos contêm metais pesados que contaminam o
+              solo e a água quando descartados de forma incorreta.
+            </p>
+            <p>
+              O ideal é levá-los a pontos de coleta especializados para garantir
+              que sejam desmontados e reaproveitados de forma segura.
+            </p>
+          </div>
+          <img
+            src="img/descarte-eletronico.jpg"
+            alt="Descarte correto de eletrônicos"
+          />
+        </div>
+      </section>
+
+      <div id="modalQuiz" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="fecharModal()">&times;</span>
+          <h2>Quiz Rápido</h2>
+          <p>Qual desses itens NÃO deve ser reciclado?</p>
+          <button onclick="responderQuiz('Papel higiênico usado')">
+            Papel higiênico usado</button
+          ><br />
+          <button onclick="responderQuiz('Garrafa PET')">Garrafa PET</button
+          ><br />
+          <button onclick="responderQuiz('Lata de refrigerante')">
+            Lata de refrigerante</button
+          ><br />
+          <p id="respostaQuiz"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Recicla ABC - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js?12"></script>
+  </body>
+</html>
